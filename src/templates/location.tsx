@@ -104,6 +104,7 @@ export const getRedirects: GetRedirects<TemplateProps> = ({ document }) => {
  * This can include the title, meta tags, script tags, etc.
  */
 export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
+  relativePrefixToRoot,
   document,
 }): HeadConfig => {
   return {
@@ -123,7 +124,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         attributes: {
           rel: "icon",
           type: "image/x-icon",
-          href: Favicon,
+          href: relativePrefixToRoot + Favicon,
         },
       },
     ],
