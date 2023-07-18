@@ -180,8 +180,6 @@ const Location: Template<TemplateRenderProps> = ({
   console.log(relativePrefixToRoot);
   console.log(Favicon);
 
-  
-
   return (
     <>
       <PageLayout templateData={{__meta, document}}>
