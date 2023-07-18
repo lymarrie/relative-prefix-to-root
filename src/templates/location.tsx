@@ -176,6 +176,11 @@ const Location: Template<TemplateRenderProps> = ({
     dm_directoryParents,
   } = document;
 
+  console.log(relativePrefixToRoot);
+  console.log(Favicon);
+
+  
+
   return (
     <>
       <PageLayout>
