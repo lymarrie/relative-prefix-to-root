@@ -177,8 +177,11 @@ const Location: Template<TemplateRenderProps> = ({
     dm_directoryParents,
   } = document;
 
-  console.log(relativePrefixToRoot);
-  console.log(Favicon);
+  // console.log(relativePrefixToRoot);
+  // console.log(Favicon);
+  console.log(__meta);
+  // console.log(document);
+
 
   return (
     <>
@@ -197,7 +200,7 @@ const Location: Template<TemplateRenderProps> = ({
         </div>
       </PageLayout>
       {/* This component displays a link to the entity that represents the given page in the Knowledge Graph*/}
-      {!isProduction(siteDomain) && <EditTool data={document} />}
+      {/* {!isProduction(siteDomain) && <EditTool data={document} />} */}
     </>
   );
 };
