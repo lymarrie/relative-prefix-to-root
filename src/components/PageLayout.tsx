@@ -7,7 +7,7 @@ import { TemplateProps } from "@yext/pages";
 export interface PageLayoutProps {
   children?: React.ReactNode;
   _site?: any;
-  templateData: TemplateProps;                                   // New
+  templateData: TemplateProps;
 
 }
 
