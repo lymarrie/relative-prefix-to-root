@@ -115,6 +115,10 @@ const City: Template<TemplateRenderProps> = ({
     dm_directoryChildren,
   } = document;
 
+  console.log("Development mode: ", __meta.mode);
+  console.log("siteDomain: ", document.siteDomain);
+  console.log("siteInternalHostName: ", document.siteInternalHostName);
+
   return (
     <>
       <PageLayout templateData={{__meta, document}}>

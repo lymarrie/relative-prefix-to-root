@@ -179,8 +179,9 @@ const Location: Template<TemplateRenderProps> = ({
 
   // console.log(relativePrefixToRoot);
   // console.log(Favicon);
-  console.log(__meta);
-  // console.log(document);
+  console.log("Development mode: ", __meta.mode);
+  console.log("siteDomain: ", document.siteDomain);
+  console.log("siteInternalHostName: ", document.siteInternalHostName);
 
 
   return (
