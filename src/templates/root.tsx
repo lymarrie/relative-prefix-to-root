@@ -42,9 +42,10 @@ export const getPath: GetPath<TemplateProps> = ({ document }) => {
   return document.slug;
 };
 
-export const getHeadConfig: GetHeadConfig<
-  TemplateRenderProps
-> = (): HeadConfig => {
+export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
+  document,
+  relativePrefixToRoot
+}): HeadConfig => {
   return {
     title: "Home Page",
     charset: "UTF-8",
@@ -62,7 +63,7 @@ export const getHeadConfig: GetHeadConfig<
         attributes: {
           rel: "icon",
           type: "image/x-icon",
-          href: Favicon,
+          href: relativePrefixToRoot + Favicon,
         },
       },
     ],

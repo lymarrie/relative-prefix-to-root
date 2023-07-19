@@ -69,6 +69,7 @@ export const getRedirects: GetRedirects<TemplateProps> = ({ document }) => {
 
 export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
   document,
+  relativePrefixToRoot
 }): HeadConfig => {
   return {
     title: document.name,
@@ -80,7 +81,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         attributes: {
           rel: "icon",
           type: "image/x-icon",
-          href: Favicon,
+          href: relativePrefixToRoot + Favicon,
         },
       },
     ],
